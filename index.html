@@ -1,218 +1,1290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maplewood Hotel</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/fav.png"
-      type="image/x-icon"
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Maplewood Hotel boasts of wide range of state of the art facilities that will make you want to come back today, tomorrow and always."
     />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/icons/bootstrap-icons.css" />
-    <script src="assets/scripts/script.js" defer></script>
+    <title>Maplewood Hotel</title>
+
+    <!-- External CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/font/fontawesome/css/all.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/animate.css" />
+
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/template-one/fev.png"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    <div id="loading-container">
-      <div id="loading"></div>
+
+  <body class="tempate-two">
+    <!-- Loader -->
+    <div class="loader">
+      <div class="loader_div"></div>
     </div>
-    <div class="container">
-      <div class="logo">Maplewood <span>Hotel.</span></div>
-      <div class="menu-btn">
-        Menu <i class="bi bi-menu-button-wide-fill"></i>
+
+    <!-- Header -->
+    <header class="main_header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-2 col-sm-3 col-xs-6 col-5">
+            <div class="logo">
+              <a href="#">
+                <img
+                  class="img-responsive light_logo"
+                  src="assets/images/template-one/logo-white.png"
+                  alt="logo"
+                />
+                <img
+                  class="img-responsive dark_logo"
+                  src="assets/images/template-one/logo.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-10 col-sm-9 col-xs-6 col-7">
+            <div class="main_nav ml-auto">
+              <!-- Main Nav Menu -->
+              <nav id="primary_navigation" class="site_navigation">
+                <div class="main_menu">
+                  <a href="javascript:void(0);" class="close_menu"
+                    ><i class="fa fa-times"></i
+                  ></a>
+                  <ul class="nav main_menu_list justify-content-end">
+                    <li class="menu-item page-active">
+                      <a href="#home">Home</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#about">About</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#portfolio">Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#team">team</a>
+                    </li>
+                  </ul>
+                  <ul class="menu-item">
+                    <a href="#contact">Contact</a>
+                    <!-- </li>
+                                    <li class="menu-item">
+                                        <a href="#service">services</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#blog">Blog</a>-->
+                  </ul>
+                </div>
+                <!--<a href="#joiningPopup" class="get_quote btn blue_gradient open-popup-link">Get a quote</a>-->
+                <a class="menu-bar mobile-navigation" href="javascript:void(0)">
+                  <span class="menu-btn-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </a>
+              </nav>
+              <!-- End Main Nav Menu -->
+            </div>
+          </div>
+        </div>
       </div>
-      <button class="book-accommodation" id="book-btn">Book Now</button>
-      <div class="menu-area">
-        <div class="navClose">
-          <h6>N A V I G A T I O N</h6>
-          <button class="close-btn" title="close" type="button">
-            <i class="bi bi-plus-lg"></i>
-          </button>
+    </header>
+    <!-- /. Header -->
+
+    <!-- banner Section -->
+    <section class="banner_sec" id="home">
+      <div class="banner_slider">
+        <div
+          class="b_slide"
+          style="background-image: url(assets/images/template-one/banner.jpg)"
+        >
+          <div class="container">
+            <div class="banner_caption text-center">
+              <h3 data-animation="fadeInLeft" data-delay="0.5s">Welcome To</h3>
+              <h1 data-animation="fadeInLeft" data-delay="0.9s">
+                Maplewood Hotel
+              </h1>
+              <p data-animation="fadeInLeft" data-delay="1.3s">
+                Are you looking for accomodation in Kumasi? You are in the right
+                place.
+              </p>
+              <a
+                href="#contact"
+                class="btn btn_white"
+                data-animation="fadeInUp"
+                data-delay="1.6s"
+                >Give Us a Call</a
+              >
+              <a
+                href="#contact"
+                class="btn btn_outline"
+                data-animation="fadeInUp"
+                data-delay="1.6s"
+                >Book a Room</a
+              >
+            </div>
+          </div>
         </div>
-        <ul class="menu-list">
-          <li class="menu-list-item">Home</li>
-          <li class="menu-list-item">Services</li>
-          <li class="menu-list-item">Gallery</li>
-          <li class="menu-list-item">Events</li>
-          <li class="menu-list-item">Contact</li>
-        </ul>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eum
-          laborum dolor ad sit commodi, officia incidunt, odio sapiente eaque
-          quis at velit, voluptate qui!
-        </p>
-        <div class="menu-icons">
-          <ul>
-            <li>
-              <a href="#" title="icons"><i class="bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#" title="icons"><i class="bi bi-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#" title="icons"
-                ><i class="bi bi-envelope-arrow-down"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" title="icons"><i class="bi bi-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href="#" title="icons"><i class="bi bi-telephone"></i></a>
-            </li>
-          </ul>
+        <div
+          class="b_slide"
+          style="background-image: url(assets/images/template-one/banner2.jpg)"
+        >
+          <div class="container">
+            <div class="banner_caption text-center">
+              <h3 data-animation="fadeInLeft" data-delay="0.5s">Welcome To</h3>
+              <h1 data-animation="fadeInLeft" data-delay="0.9s">
+                Maplewood Hotel
+              </h1>
+              <p data-animation="fadeInLeft" data-delay="1.3s">
+                Whether you are keen to catch-up with friends and family or to
+                treat yourself to a well-deserved moment, we are waiting to
+                warmly welcome you.
+              </p>
+              <a
+                href="#contact"
+                class="btn btn_white"
+                data-animation="fadeInUp"
+                data-delay="1.6s"
+                >Give Us a Call</a
+              >
+              <a
+                href="#contact"
+                class="btn btn_outline"
+                data-animation="fadeInUp"
+                data-delay="1.6s"
+                >Book a Room</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="arrowUp"><i class="bi bi-arrow-up"></i></div>
+        <div
+          class="b_slide"
+          style="background-image: url(assets/images/template-one/banner3.jpg)"
+        >
+          <div class="container">
+            <div class="banner_caption text-center">
+              <h3 data-animation="fadeInLeft" data-delay="0.5s">Welcome To</h3>
+              <h1 data-animation="fadeInLeft" data-delay="0.9s">
+                Maplewood Hotel
+              </h1>
+              <p data-animation="fadeInLeft" data-delay="1.3s">
+                Make your reservation online anytime any day.
+              </p>
+              <a
+                href="#contact"
+                class="btn btn_white"
+                data-animation="fadeInUp"
+                data-delay="1.6s"
+                >Give Ua a Call</a
+              >
+              <a
+                href="#contact"
+                class="btn btn_outline"
+                data-animation="fadeInUp"
+                data-delay="1.6s"
+                >Book a Room</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="svg_curve">
+        <svg
+          version="1.1"
+          x="0px"
+          y="0px"
+          width="3293px"
+          height="190.76px"
+          viewBox="0 0 3293 190.76"
+          enable-background="new 0 0 3293 190.76"
+          xml:space="preserve"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            fill="#FFFFFF"
+            d="M0,2.954V190.76h3293V0.868C3293,0.868,1760.584,400.175,0,2.954z"
+          />
+        </svg>
+      </div>
+      <div class="scroll_down">
+        <span></span>
+      </div>
+    </section>
+    <!-- /. banner Section -->
 
-      <!-- home -->
-      <section id="home">
-        <div class="home-text">
-          <h3>WELCOME TO</h3>
-          <h1>MAPLEWOOD HOTEL</h1>
-          <p>
-            Whether you are keen to catch-up with friends and family or to treat
-            yourself to a well-deserved moment, we are waiting to warmly welcome
-            you.
-          </p>
+    <!-- About Section -->
+    <section class="about_sec" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="sec_heading wow fadeInLeft">
+              <span>About Us</span>Our values and goals
+            </h2>
+            <p class="wow fadeInLeft">
+              MAPLEWOOD HOTEL KUMASI GHANA Maplewood Hotel boasts of wide range
+              of state of the art facilities that will make you want to come
+              back today, tomorrow and always. Facilities include cocktail bar,
+              conference hall with a seating capacity of 20 with internet
+              access, a spacious car park, restaurant and hot and cold water.
+              <br />
+              We offers comfort, refinement and a unique character that will
+              make your stay here unforgettable. It is a place to rest and
+              relax, to indulge in fine food and drink, and enjoy the fabled
+              warmth of Ghanaian hospitality. We subscribe to the belief that
+              the way to provide our guests with the finest residential
+              experience is to set the standards quality and maintain them with
+              unceasing rigor, treating their requests and desires as absolute
+              necessities at all times..
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="about_right wow fadeInRight">
+              <img src="assets/images/template-one/about-img.jpg" alt="about" />
+            </div>
+          </div>
         </div>
-        <button class="book-accommodation">Book A Room</button>
-        <button class="book-accommodation">Make Enquiries</button>
-      </section>
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 wow slideInUp"
+            data-wow-duration=".5s"
+            data-wow-delay="0s"
+          >
+            <div class="what-we-do-item text-center mt-30">
+              <i class="fa fa-laptop-code"></i>
+              <h5 class="title">Free WiFi Internet</h5>
+              <p>We offer high speed internet to all our clients.</p>
+              <a href="case-details.html"><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 wow slideInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0s"
+          >
+            <div class="what-we-do-item text-center mt-30">
+              <i class="fa fa-fingerprint"></i>
+              <h5 class="title">Security System</h5>
+              <p>24/7 security to protect all our client.</p>
+              <a href="case-details.html"><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 wow slideInUp"
+            data-wow-duration="1.5s"
+            data-wow-delay="0s"
+          >
+            <div class="what-we-do-item text-center mt-30">
+              <i class="fa fa-chalkboard"></i>
+              <h5 class="title">Car Park</h5>
+              <p>We have a big spacious car park.</p>
+              <a href="case-details.html"><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 wow slideInUp"
+            data-wow-duration="2s"
+            data-wow-delay="0s"
+          >
+            <div class="what-we-do-item text-center mt-30">
+              <i class="fa fa-database"></i>
+              <h5 class="title">Restaurant</h5>
+              <p>We offer breakfast in bed and a lot's of delicious meal.</p>
+              <a href="case-details.html"><i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. About Section -->
 
-      <!-- about -->
-      <section id="about">
-        <div class="about-header">
-          <h3>HELLO THERE</h3>
-          <h1>We Are Maplewood</h1>
-          <h3>SINCE 2006</h3>
-        </div>
-        <div class="about-text">
-          <p>
-            Maplewood Hotel boasts of wide range of state of the art facilities
-            that will make you want to come back today, tomorrow and always.
-          </p>
-          <p>
-            Facilities include cocktail bar, conference hall with a seating
-            capacity of 20 with internet access, a spacious car park, restaurant
-            and accommodation with hot and cold water.
-          </p>
-          <p>
-            We offer comfort, refinement and a unique character that will make
-            your stay here unforgettable.
-          </p>
-          <p>
-            It is a place to rest and relax, to indulge in fine food and drinks,
-            and enjoy the fabled warmth of Ghanaian hospitality.
-          </p>
-          <p>
-            We subscribe to the belief that the way to provide our guests with
-            the finest residential experience is to set the standards quality
-            and maintain them with unceasing rigor, treating their requests and
-            desires as absolute necessities at all times
+    <!-- portfolio Section -->
+    <section class="portfolio_tab_sec bg_light_gray" id="portfolio">
+      <div class="container">
+        <div class="sec_header text-center">
+          <h2 class="sec_heading wow fadeInLeft">
+            <span>Maplewood Hotel</span>Gallery
+          </h2>
+          <p class="wow fadeInLeft">
+            Maplewood hotel offers comfort, refinement and a unique character
+            that will make your stay here unforgettable. It is a place to rest
+            and relax, to indulge in fine food and drink, and enjoy the fabled
+            warmth of Ghanaian hospitality. We subscribe to the belief that the
+            way to provide our guests with the finest residential experience is
+            to set the standards quality and maintain them with unceasing rigor,
+            treating their requests and desires as absolute necessities at all
+            times..
           </p>
         </div>
-        <ul class="portfolio">
-          <li>
-            <h1>3000 <i class="bi bi-plus-lg"></i></h1>
-            <h3>SATISFIED CUSTOMERS</h3>
-          </li>
-          <li>
-            <h1>50 <i class="bi bi-plus-lg"></i></h1>
-            <h3>EVENTS ORGANIZED</h3>
-          </li>
-          <li>
-            <h1>6 <i class="bi bi-plus-lg"></i></h1>
-            <h3>WORKING STAFF</h3>
-          </li>
-        </ul>
-      </section>
-
-      <!-- services -->
-      <section id="services">
-        <div class="service-intro">
-          <h3>WHAT WE DO</h3>
-          <h1>
-            We've got everything you need for relaxation and comfortability
-          </h1>
-        </div>
-        <div class="main-services">
-          <ul class="services-list">
-            <li class="service-card">
-              <i class="bi bi-house-check"></i>
-              <h2>ACCOMMODATION</h2>
-              <p>Modern, comfortable rooms for all guests.</p>
+      </div>
+      <div class="container-fluid">
+        <div class="portfolio_tabs">
+          <ul class="tabs_list text-center wow fadeInUp" id="filters">
+            <li>
+              <a
+                href="#!"
+                class="filter active"
+                data-filter=".designs, .development, .seo, .marketing"
+                >All</a
+              >
             </li>
-            <li class="service-card">
-              <i class="bi bi-cup-straw"></i>
-              <h2>RESTAURANT</h2>
-              <p>Delicious cuisine and drinks in a cozy setting.</p>
+            <li>
+              <a href="#!" class="filter" data-filter=".designs">Rooms</a>
             </li>
-            <li class="service-card">
-              <i class="bi bi-people"></i>
-              <h2>CONFERENCE ROOM</h2>
-              <p>Spacious, well-equipped for your meetings.</p>
+            <li>
+              <a href="#!" class="filter" data-filter=".development">Food</a>
             </li>
-            <li class="service-card">
-              <i class="bi bi-flower2"></i>
-              <h2>EVENT FLOOR</h2>
-              <p>Perfect venue for events and celebrations.</p>
+            <li>
+              <a href="#!" class="filter" data-filter=".seo">Environment</a>
             </li>
+            <!--<li><a href="#!" class="filter" data-filter=".marketing">Outside View</a></li>-->
           </ul>
+          <div class="portfolio_list wow fadeInUp">
+            <div id="portfoliolist">
+              <div
+                class="portfolio_item portfolio designs"
+                data-cat="designs"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/IMG_2595.jpg">
+                  <img
+                    src="assets/images/template-one/IMG_2595.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio designs"
+                data-cat="designs"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/IMG_2654.jpg">
+                  <img
+                    src="assets/images/template-one/IMG_2654.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio development"
+                data-cat="development"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/_MG_4168.jpeg">
+                  <img
+                    src="assets/images/template-one/_MG_4168.jpeg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio seo"
+                data-cat="seo"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/portfolio-4.jpg">
+                  <img
+                    src="assets/images/template-one/portfolio-4.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio designs"
+                data-cat="designs"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/portfolio-5.jpg">
+                  <img
+                    src="assets/images/template-one/portfolio-5.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio designs"
+                data-cat="designs"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/portfolio-2.jpg">
+                  <img
+                    src="assets/images/template-one/portfolio-2.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio development"
+                data-cat="development"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/banku1.jpeg">
+                  <img
+                    src="assets/images/template-one/banku1.jpeg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio seo"
+                data-cat="seo"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/portfolio-3.jpg">
+                  <img
+                    src="assets/images/template-one/portfolio-3.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio marketing"
+                data-cat="marketing"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/IMG_2586.jpg">
+                  <img
+                    src="assets/images/template-one/IMG_2586.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio marketing"
+                data-cat="marketing"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/IMG_2695.jpg">
+                  <img
+                    src="assets/images/template-one/IMG_2695.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio seo"
+                data-cat="seo"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/IMG_2670.jpg">
+                  <img
+                    src="assets/images/template-one/IMG_2670.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="portfolio_item portfolio seo"
+                data-cat="seo"
+                style="display: inline-block"
+              >
+                <a href="assets/images/template-one/banner.jpg">
+                  <img
+                    src="assets/images/template-one/banner.jpg"
+                    alt="portfolio"
+                  />
+                  <div class="p_caption">
+                    <div class="plus_icon"></div>
+                    <h4>Click to view</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- /. portfolio Section -->
 
-      <!-- gallery -->
-      <section id="gallery">
-        <div class="gallery-intro">
-          <h3>OUR FACILITIES</h3>
-          <h1>We love what we have, check out our latest facilities</h1>
-        </div>
-        <div class="main-gallery">
-          <div class="gallery-card">
-            <img src="assets/images/hotel-building.JPG" alt="hotel-building" />
-            <h2>Hotel Building</h2>
-          </div>
-          <div class="gallery-card">
-            <img src="assets/images/balcony.JPG" alt="balcony" />
-            <h2>Balcony</h2>
-          </div>
-          <div class="gallery-card">
-            <img src="assets/images/top-view.JPG" alt="eventfloor" />
-            <h2>Event Floor</h2>
-          </div>
-          <div class="gallery-card">
-            <img src="assets/images/reception.JPG" alt="reception" />
-            <h2>Reception</h2>
-          </div>
-          <div class="gallery-card">
-            <img src="assets/images/executive-bed2.JPG" alt="executive-room" />
-            <h2>Executive Room</h2>
-          </div>
-          <div class="gallery-card">
-            <img
-              src="assets/images/executive-setup.JPG"
-              alt="executive-setup"
-            />
-            <h2>Executive Room Setup</h2>
-          </div>
-          <div class="gallery-card">
-            <img src="assets/images/twinbed.JPG" alt="twinbed" />
-            <h2>Executive Room (2 Beds)</h2>
-          </div>
-          <div class="gallery-card">
-            <img src="assets/images/economy-bed.JPG" alt="economy-room" />
-            <h2>Economy Room</h2>
+    <!-- Lets Work Section -->
+    <section class="lets_work_sec" id="lets_work">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <div
+            class="lets_work_block text-center"
+            style="
+              background-image: url(assets/images/template-one/lets-work-bg-1.jpg);
+            "
+          >
+            <div class="lets_work_block_inner">
+              <h2><span>Event space available </span>Get in touch now</h2>
+              <p>
+                We have a big space to host all kinds of events and parties,
+                gives us a call to make your reservations.
+              </p>
+              <a href="#contact" class="btn btn_white">CONTACT US NOW</a>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="col-md-6">
+          <div
+            class="lets_work_block hiring_block text-center"
+            style="
+              background-image: url(assets/images/template-one/lets-work-bg-2.jpg);
+            "
+          >
+            <div class="lets_work_block_inner">
+              <h2><span>We Are Hiring</span>Book a Room Now</h2>
+              <p>
+                Your comfort is always important to us, gives us a call to make
+                your reservations.
+              </p>
+              <a href="#contact" class="btn btn_white">JOIN US NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. Lets Work Section -->
 
-      <!-- events -->
-      <section></section>
+    <!-- service Section -->
+    <!-- <section class="service_sec" id="service">
+        <div class="container">
+            <div class="sec_header text-center">
+                <h2 class="sec_heading wow fadeInLeft"><span>OUR LATEST SERVICES</span>We Offer Better Soluation For
+                    Your IT Business</h2>
+                <p class="wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
+                    pulvinar vestibulum. Doneceleifend, sem sed dictum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elits</p>
+            </div>
+            <div class="servics_list">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow slideInUp" data-wow-duration=".25s" data-wow-delay="0s">
+                        <div class="service_item">
+                            <div class="service_thumb"><i class="fas fa-search"></i></div>
+                            <div class="service_content">
+                                <h4>SEO</h4>
+                                <p>Lorem ipsum dolor sit amet. Con eleifend sem sed dictum mattis sectetur elit. Nulla
+                                    convallis pul.</p>
+                                <a href="#" class="btn blue_gradient">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+                        <div class="service_item">
+                            <div class="service_thumb"><i class="fa fa-pen-fancy"></i></div>
+                            <div class="service_content">
+                                <h4>DESIGN</h4>
+                                <p>Lorem ipsum dolor sit amet. Con eleifend sem sed dictum mattis sectetur elit. Nulla
+                                    convallis pul.</p>
+                                <a href="#" class="btn blue_gradient">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow slideInUp" data-wow-duration="0.75s" data-wow-delay="0s">
+                        <div class="service_item">
+                            <div class="service_thumb"><i class="fa fa-handshake"></i></div>
+                            <div class="service_content">
+                                <h4>CONSULTING</h4>
+                                <p>Lorem ipsum dolor sit amet. Con eleifend sem sed dictum mattis sectetur elit. Nulla
+                                    convallis pul.</p>
+                                <a href="#" class="btn blue_gradient">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow slideInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="service_item">
+                            <div class="service_thumb"><i class="fas fa-volume-up"></i></div>
+                            <div class="service_content">
+                                <h4>ADVERTISING</h4>
+                                <p>Lorem ipsum dolor sit amet. Con eleifend sem sed dictum mattis sectetur elit. Nulla
+                                    convallis pul.</p>
+                                <a href="#" class="btn blue_gradient">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow slideInUp" data-wow-duration="1.25s" data-wow-delay="0s">
+                        <div class="service_item">
+                            <div class="service_thumb"><i class="fa fa-flag"></i></div>
+                            <div class="service_content">
+                                <h4>BRANDING</h4>
+                                <p>Lorem ipsum dolor sit amet. Con eleifend sem sed dictum mattis sectetur elit. Nulla
+                                    convallis pul.</p>
+                                <a href="#" class="btn blue_gradient">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow slideInUp" data-wow-duration="1.50s" data-wow-delay="0s">
+                        <div class="service_item">
+                            <div class="service_thumb"><i class="fa fa-laptop-code"></i></div>
+                            <div class="service_content">
+                                <h4>DEVELOPMENT</h4>
+                                <p>Lorem ipsum dolor sit amet. Con eleifend sem sed dictum mattis sectetur elit. Nulla
+                                    convallis pul.</p>
+                                <a href="#" class="btn blue_gradient">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn browse_btn blue_gradient wow slideInUp" data-wow-duration="1.75s"
+                    data-wow-delay="0s">browse More</a>
+            </div>
+        </div>-->
+    <!--/section -->
+    <!-- Team Section -->
+    <section class="team_sec" id="team">
+      <div class="container">
+        <div class="sec_header text-center">
+          <h2 class="sec_heading wow fadeInLeft">
+            <span>OUR Team</span>MEET OUR LEADERS
+          </h2>
+          <p class="wow fadeInLeft">
+            "None of us, including me, ever do great things. But we can all do
+            small things, with great love, and together we can do something
+            wonderful."
+          </p>
+        </div>
+        <div class="team_list">
+          <div class="team_member">
+            <div class="team_member_inner">
+              <img
+                src="assets/images/template-one/team-member.jpg"
+                alt="team Member"
+              />
+              <div class="team_member_overlay">
+                <h5>Isaac Catu</h5>
+                <div class="memeber_role">MANAGER</div>
+              </div>
+            </div>
+          </div>
+          <div class="team_member">
+            <div class="team_member_inner">
+              <img
+                src="assets/images/template-one/team-member2.jpg"
+                alt="team Member"
+              />
+              <div class="team_member_overlay">
+                <h5>James Nkatia-kumi</h5>
+                <div class="memeber_role">DIRECTOR</div>
+              </div>
+            </div>
+          </div>
+          <div class="team_member">
+            <div class="team_member_inner">
+              <img
+                src="assets/images/template-one/team-member3.jpg"
+                alt="team Member"
+              />
+              <div class="team_member_overlay">
+                <h5></h5>
+                <div class="memeber_role"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="team_member">
+                    <div class="team_member_inner">
+                        <img src="assets/images/template-one/team-member4.jpg" alt="team Member">
+                        <div class="team_member_overlay">
+                            <h5>David Jhon</h5>
+                            <div class="memeber_role">IT CONSULTANT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team_member">
+                    <div class="team_member_inner">
+                        <img src="assets/images/template-one/team-member5.jpg" alt="team Member">
+                        <div class="team_member_overlay">
+                            <h5>David Jhon</h5>
+                            <div class="memeber_role">IT CONSULTANT</div>
+                        </div>
+                    </div>
+                </div -->
+        </div>
+      </div>
+    </section>
 
-      <!-- contact -->
-      <section></section>
+    <!-- Counter Section -->
+    <div class="counter_sec love_counter">
+      <div class="container">
+        <div class="counter_area mt-30 text-center">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div
+                class="counter wow slideInUp"
+                data-wow-duration=".5s"
+                data-wow-delay="0s"
+              >
+                <sub><span class="love_count">2</span> <sup>+</sup></sub>
+                <span>Reception</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div
+                class="counter wow slideInUp mt-55"
+                data-wow-duration="1s"
+                data-wow-delay="0s"
+              >
+                <sub><span class="love_count">5</span> <sup>+</sup></sub>
+                <span>Room service</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div
+                class="counter wow slideInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="0s"
+              >
+                <sub><span class="love_count">20</span> <sup>+</sup></sub>
+                <span>Different kinds of food </span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div
+                class="counter wow slideInUp mt-55"
+                data-wow-duration="2s"
+                data-wow-delay="0s"
+              >
+                <sub><span class="love_count">923</span> <sup>+</sup></sub>
+                <span>Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- /. Counter Section -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials_sec" id="testimonials">
+      <div class="container">
+        <div class="testimonials_inner">
+          <div class="sec_header">
+            <h2 class="sec_heading wow fadeInLeft">
+              <span>Testimonials</span>Our Clients Feedback
+            </h2>
+            <p class="wow fadeInLeft">
+              Your feedback is important to us as a business, it's part of the
+              reasons why we are still here today thank you. We looking forward
+              to seeing you again.
+            </p>
+          </div>
+          <div class="testi_wrap">
+            <div class="testi_slider dots_bottom">
+              <div class="testi_item">
+                <div class="testi_content">
+                  <ul class="star_rating">
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                  </ul>
+                  <p>
+                    "The rooms were clean, very comfortable, and the staff was
+                    amazing. They went over and beyond to help make our stay
+                    enjoyable. I highly recommend this hotel for anyone visiting
+                    Kumasi"
+                  </p>
+                </div>
+                <div class="testi_author">
+                  <div class="testi_name">Grace</div>
+                  <div class="testi_designation">Thank you.</div>
+                </div>
+              </div>
+              <div class="testi_item">
+                <div class="testi_content">
+                  <ul class="star_rating">
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                  </ul>
+                  <p>
+                    I have stayed at dozen of hotels in Ghana. But this old
+                    hotel was on the top of the list of best stays/experiences
+                    ever. Staff was very hospitable and there for every need of
+                    mine. Thank you so much.
+                  </p>
+                </div>
+                <div class="testi_author">
+                  <div class="testi_name">Linda</div>
+                  <div class="testi_designation">
+                    This year you will see me again
+                  </div>
+                </div>
+              </div>
+              <div class="testi_item">
+                <div class="testi_content">
+                  <ul class="star_rating">
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                    <li><i class="fa fa-star fill"></i></li>
+                  </ul>
+                  <p>
+                    Overall, I had a great experience with the Maplewood; staff
+                    was incredibly helpful, and the amenities were great. The
+                    room was wonderful, clean, and perfect to celebrate a
+                    birthday weekend.
+                  </p>
+                </div>
+                <div class="testi_author">
+                  <div class="testi_name">Robert</div>
+                  <div class="testi_designation">Thank you.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. Testimonials Section -->
+
+    <!-- Pricing Section -->
+    <section class="pricing_sec">
+      <div class="pricing_list">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="pricing_item">
+                <div class="pricing_value">
+                  <div class="p_v_per_month"><span>$</span>25<em>/ni</em></div>
+                  <div class="perYear">$25/night</div>
+                </div>
+                <div class="p_i_middle">
+                  <h3>Economy</h3>
+                  <ul class="pricing_info_list">
+                    <li><i class="fa fa-check"></i>TV</li>
+                    <li><i class="fa fa-check"></i>Fan</li>
+                    <li><i class="fa fa-check"></i>Free Internet</li>
+                    <li><i class="fa fa-check"></i>Single Bed</li>
+                    <li><i class="fa fa-check"></i>Washroom</li>
+                  </ul>
+                  <a href="#contact" class="btn blue_gradient">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="pricing_item">
+                <div class="pricing_value">
+                  <div class="p_v_per_month"><span>$</span>35<em>/ni</em></div>
+                  <div class="perYear">$35/night</div>
+                </div>
+                <div class="p_i_middle">
+                  <h3>Standard</h3>
+                  <ul class="pricing_info_list">
+                    <li><i class="fa fa-check"></i>TV</li>
+                    <li><i class="fa fa-check"></i>Fan and air conditioner</li>
+                    <li><i class="fa fa-check"></i>Free internet</li>
+                    <li><i class="fa fa-check"></i>Double Bed</li>
+                    <li><i class="fa fa-check"></i>Washroom</li>
+                  </ul>
+                  <a href="#contact" class="btn blue_gradient">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="pricing_item">
+                <div class="pricing_value">
+                  <div class="p_v_per_month"><span>$</span>50<em>/ni</em></div>
+                  <div class="perYear">$50/night</div>
+                </div>
+                <div class="p_i_middle">
+                  <h3>Suite</h3>
+                  <ul class="pricing_info_list">
+                    <li><i class="fa fa-check"></i>TV</li>
+                    <li><i class="fa fa-check"></i>Fan and air conditioner</li>
+                    <li><i class="fa fa-check"></i>Free Internet</li>
+                    <li><i class="fa fa-check"></i>King Size Bed</li>
+                    <li><i class="fa fa-check"></i>Washroom</li>
+                  </ul>
+                  <a href="#contact" class="btn blue_gradient">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. Pricing Section -->
+
+    <!-- Contact Section -->
+    <section class="contact_sec" id="contact">
+      <div class="sec_header text-center">
+        <div class="container">
+          <h2 class="sec_heading wow fadeInUp"><span>Contact us</span></h2>
+          <!--<p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
+                    pulvinar vestibulum. Doneceleifend, sem sed dictum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elits</p>-->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contact-details d-flex">
+          <div class="row">
+            <div class="col-sm-12 col-md-5">
+              <div class="contact_info wow fadeInLeft">
+                <h3>contact us</h3>
+                <p>
+                  Feel free to contact us day or night, our customer service is
+                  right at your fingertips, offering personalized customer
+                  service.
+                </p>
+                <hr />
+                <h5>
+                  <i class="fa fa-map-marker"></i> Accra-Kumasi Road, Oduom,
+                  <br />near St. Louis Secondary School, Kumasi Ghana.
+                </h5>
+                <h5><i class="fa fa-envelope"></i> nkatiakumi@aol.com</h5>
+                <h5><i class="fa fa-phone"></i> (+233) 246-139129</h5>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-7">
+              <div class="contact-form-area wow fadeInRight">
+                <form action="#">
+                  <div class="input-title">
+                    <h3 class="title">
+                      Don't Hesitate To Contact With Us, Say Hello......
+                    </h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="input-box">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Full Name Here"
+                        />
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-box">
+                        <input
+                          class="form-control"
+                          type="email"
+                          placeholder="Email Here"
+                        />
+                        <i class="fa fa-envelope-open"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-box">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Phone No"
+                        />
+                        <i class="fa fa-phone"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-box">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Subject"
+                        />
+                        <i class="fa fa-edit"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="input-box">
+                        <textarea
+                          class="form-control"
+                          name="#"
+                          id="#"
+                          cols="30"
+                          rows="10"
+                          placeholder="Message Us"
+                        ></textarea>
+                        <i class="fa fa-pencil"></i>
+                        <button
+                          class="btn blue_gradient wow slideInUp"
+                          data-wow-duration="1.5s"
+                          data-wow-delay="0s"
+                          type="submit"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. Contact Section -->
+
+    <!-- Partners Section -->
+    <div class="partners_sec">
+      <div class="container">
+        <div class="partners_slider">
+          <div class="partner_item">
+            <img src="assets/images/template-one/partner-1.png" alt="partner" />
+          </div>
+          <div class="partner_item">
+            <img src="assets/images/template-one/partner-2.png" alt="partner" />
+          </div>
+          <!--<div class="partner_item">
+                    <img src="assets/images/partner-3.png" alt="partner">
+                </div>
+                <div class="partner_item">
+                    <img src="assets/images/partner-4.png" alt="partner">
+                </div>
+                <div class="partner_item">
+                    <img src="assets/images/partner-5.png" alt="partner">
+                </div>
+                <div class="partner_item">
+                    <img src="assets/images/partner-6.png" alt="partner">
+                </div>
+                <div class="partner_item">
+                    <img src="assets/images/partner-7.png" alt="partner">
+                </div -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer Class="main_footer wow fadeInUp blue_gradient">
+      <div class="container">
+        <div class="footer_top text-center">
+          <div class="footer_top_logo">
+            <a href="#" class="footer-logo"
+              ><img
+                src="assets/images/template-one/logo-icon.png"
+                alt="logo icon"
+            /></a>
+          </div>
+          <p>
+            Feel free to contact us day or night, our customer service is right
+            at your fingertips, offering personalized customer service.
+          </p>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="footer_sec">
+              <i class="fa fa-phone-alt"></i>
+              <h3>Call Us On</h3>
+              <a href="#!">(+233) 246-139129</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer_sec">
+              <i class="fa fa-envelope"></i>
+              <h3>Mail us on</h3>
+              <a href="mailto:nkatiakumi@aol.com">nkatiakumi@aol.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer_sec">
+              <i class="fab fa-skype"></i>
+              <h3>Lets Skype</h3>
+              <a href="#">skype</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyrigt_text d-flex justify-content-between">
+          <span>© Copyright 2022 O.A CandT, LTD.</span>
+          <!-- social icons -->
+          <div class="social_div">
+            <ul class="social_list">
+              <li>
+                <a href="https://web.facebook.com/maplewoodhotelgh"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /. social icons -->
+        </div>
+      </div>
+      <div class="svg_curve">
+        <svg
+          version="1.1"
+          x="0px"
+          y="0px"
+          width="3293px"
+          height="190.76px"
+          viewBox="0 0 3293 190.76"
+          enable-background="new 0 0 3293 190.76"
+          xml:space="preserve"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            fill="#FFFFFF"
+            d="M0,2.954V190.76h3293V0.868C3293,0.868,1760.584,400.175,0,2.954z"
+          />
+        </svg>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+
+    <a href="javascript:void(0);" class="scrollUp"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
+
+    <!-- The Modal -->
+    <div id="joiningPopup" class="white-popup mfp-hide custom_mfp_popup">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header text-center">
+          <h3 class="modal-title">Request for a Quote</h3>
+          <p>
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam
+          </p>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="get_quote_form">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Enter Your Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Enter Phone No."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="name"
+                      placeholder="Enter Email Address"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Enter Your Message"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn">Submit Your Request</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /. The Modal -->
+
+    <!-- External JS libraries -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
+  <script>
+    "undefined" === typeof _trfq || (window._trfq = []);
+    ("undefined" === typeof _trfd && (window._trfd = []),
+      _trfd.push(
+        { "tccl.baseHost": "secureserver.net" },
+        { ap: "cpsh-oh" },
+        { server: "p3plzcpnl508989" },
+        { dcenter: "p3" },
+        { cp_id: "10294552" },
+        { cp_cl: "8" },
+      )); // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+  </script>
+  <script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
 </html>
